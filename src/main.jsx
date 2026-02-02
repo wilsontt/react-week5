@@ -5,10 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
 
 // import App from './App.jsx'
-import { createBrowserRouter, RouterProvider } from 'react-router'
+import { RouterProvider, createHashRouter,  } from 'react-router'
 
 import routes from '../routes/index.jsx'
-const router = createBrowserRouter(routes)
+const router = createHashRouter(routes)  // 開發環境
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
